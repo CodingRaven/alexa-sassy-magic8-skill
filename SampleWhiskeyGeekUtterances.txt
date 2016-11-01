@@ -1,0 +1,5 @@
+GetNewFactIntent ask whiskey geek
+GetNewFactIntent ask whiskey geek a fact
+GetNewFactIntent whiskey geek
+GetNewFactIntent whiskey fact
+GetNewFactIntent whiskey facts
