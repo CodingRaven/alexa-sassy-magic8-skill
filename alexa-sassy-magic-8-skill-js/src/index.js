@@ -82,30 +82,8 @@ SassyMagicEight.prototype.intentHandlers = {
         handleLaunchSkillIntent(session, response);
     },
     "AMAZON.HelpIntent": function (intent, session, response) {
-        var speechText = "";
-
-        switch (session.attributes.stage) {
-            case 0:
-                speechText = "The magic eight ball is a fortune telling or advice giving toy developed in the 1950s. People traditionally ask it a question, and it returns a response." +
-                    "To ask magic eight ball a question, just ask by saying start magic eight ball, or you can say exit.";
-                break;
-            case 1:
-                speechText = "You can ask, magic eight ball, will I win the Lotto.";
-                break;
-            case 2:
-                speechText = "You can say, start magic eight ball, or you can say exit.";
-                break;
-            default:
-                speechText = "The magic eight ball is a fortune telling or advice giving toy developed in the 1950s. People traditionally ask it a question, and it returns a response." +
-                    "To ask magic eight ball a question, just ask by saying start magic eight ball, or you can say exit.";
-        }
-
-        var speechOutput = {
-            speech: speechText,
-            type: AlexaSkill.speechOutputType.PLAIN_TEXT
-        };
-
-        response.tell(speechOutput);
+        response.ask("The magic eight ball is a fortune telling device developed in the 1950s. People traditionally ask it a question, and it returns a response. To ask magic eight ball a question, just ask by saying start magic eight ball, or you can say exit. What would you like to ask magic eight ball?", 
+            		 "What would you like to ask magic eight ball?");
     },
     "AMAZON.StopIntent": function (intent, session, response) {
         var speechOutput = "Goodbye";
