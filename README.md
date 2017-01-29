@@ -2,7 +2,7 @@
 This skill returns a witty response to any question a user asks it. All responses are simple phrases from the original 20 magic 8 ball responses...just changed a little.
 
 <h3>Store Marketplace Snapshot</h3>
-![alt tag](https://github.com/CodingRaven/alexa-sassy-magic8-skill/blob/master/sassy_magic_8.png)
+![alt tag](https://github.com/CodingRaven/alexa-sassy-magic8-skill/blob/master/sassy_magic_8.PNG)
 
 <h3>Sample Utterances</h3>
 <ul>
